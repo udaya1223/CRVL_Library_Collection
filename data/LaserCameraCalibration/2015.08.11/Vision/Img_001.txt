@@ -1,0 +1,8 @@
+Extrinsic parameters:
+
+Translation vector: Tc_ext = [ -405.658529 	 -63.343160 	 987.810293 ]
+Rotation vector:   omc_ext = [ -2.045405 	 -2.048775 	 0.188777 ]
+Rotation matrix:    Rc_ext = [ 0.008592 	 0.965951 	 -0.258583
+                               0.996938 	 0.011824 	 0.077294
+                               0.077720 	 -0.258455 	 -0.962892 ]
+Pixel error:           err = [ 0.20190 	 0.20349 ]

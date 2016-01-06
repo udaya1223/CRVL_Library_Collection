@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>x64\$(Configuration)\</OutDir>
+    <IntDir>x64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../3rdpartyvs2013/include/opencv;../../../3rdpartyvs2013/include/opencv2;../../../3rdpartyvs2013/include;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)crvlRankTransformer.lib</OutputFile>
+      <AdditionalLibraryDirectories>../../../3rdpartyvs2013/lib/x64/opencv;../../../3rdpartyvs2013/lib/x64/;../../lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /f /y *.h "$(projectdir)..\..\include\"
+xcopy /f /y .\x64\Release\*.lib "$(projectdir)..\..\lib\x64"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
